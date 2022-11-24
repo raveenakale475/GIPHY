@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giphy - Be Animated</title>
+    <link
+      rel="icon"
+      href="https://cdn.worldvectorlogo.com/logos/giphy-logo-1.svg"
+    />
+    <style>
+      img {
+        width: 30%;
+        height: 200px;
+        margin-top: 10px;
+        margin-right: 10px;
+      }
+      label {
+        margin-left: 200px;
+      }
+      input {
+        width: 15%;
+      }
+      .button {
+        margin-left: 50px;
+        padding: 5px 10px 5px 10px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <label for="search">Search</label>
+      <input type="text" id="search" /><button class="button" onclick="gif()">
+        GIF</button
+      ><button class="button" onclick="sticker()">Sticker</button>
+
+      <button class="button">Home</button>
+      <button class="button" onclick="random ()">Random</button>
+      <button onclick="categories ()" class="button">Categories</button>
+      <button class="button">Gif</button>
+      <button onclick="translate ()" class="button">Translate</button>
+      <span id="sorting"></span>
+    </div>
+    <div id="gif"></div>
+  </body>
+</html>
+<script src="giphy.js"></script>
