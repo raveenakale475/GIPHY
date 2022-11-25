@@ -18,6 +18,9 @@ main();
 const append = async (data) => {
   data.forEach((e) => {
     let gif = document.getElementById("gif");
+
+    let sticker = document.getElementById("sticker");
+
     let img = document.createElement("img");
     img.src = e.images.downsized.url;
     img.addEventListener("click", () => {
@@ -25,6 +28,7 @@ const append = async (data) => {
     });
     console.log("data");
     gif.append(img);
+    sticker.append(name, img);
   });
 };
 
